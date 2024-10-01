@@ -32,4 +32,9 @@ class PostController extends Controller
         $posts = Post::where('user_id', auth()->id())->get();
         return view('post.index', compact('posts'));
     }
+
+    public function show(Post $post) {
+        return view('post.show', compact('post'));
+    }
+
 }
