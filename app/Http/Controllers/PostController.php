@@ -52,4 +52,9 @@ class PostController extends Controller
         return back();
     }
 
+    public function destroy(Request $request, Post $post) {
+        $post->delete();
+        $request->session()->flash('message', '削除しました');
+        return redirect('post');
+    }
 }
