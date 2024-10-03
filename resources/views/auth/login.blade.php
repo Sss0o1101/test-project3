@@ -39,7 +39,9 @@
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
+            <x-primary-button class="ms-3"
+                onmouseover="this.style.backgroundColor='yellow'"
+                onmouseout="this.style.backgroundColor=''">
                 {{ __('Log in !') }}
             </x-primary-button>
         </div>

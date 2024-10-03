@@ -1,12 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        一覧表示
+        一覧表示⚡️
         </h2>
     </x-slot>
     <div class="mx-auto px-6">
 
-         {{-- @if(session('message'))
+         {{-- @if(session('message'))　
             <div class="text-red-600 font-bold">
                 {{session('message')}}
             </div>
@@ -14,10 +14,10 @@
 
         <x-message :message="session('message')"/>
         @foreach($posts as $post)
-        <div class="mt-4 p-8 bg-white w-full rounded-2xl" style="border-radius: 15px;">
-            <h1 class="p-4 text-lg font-semibold">
+        <div class="mt-4 p-8 bg-white w-full rounded-2xl" style="border-radius: 15px; background-color: rgb(232, 197, 134);">
+            <h1 class="p-4 text-lg font-semibold" >
                 件名：
-                <a href="{{route('post.show', $post)}}" class="text-blue-600" style="color: rgb(225, 154, 22);">
+                <a href="{{route('post.show', $post)}}" class="text-blue-600" style="color: #fff;">
                     {{$post->title}}
                 </a>
             </h1>
