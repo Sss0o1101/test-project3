@@ -36,7 +36,7 @@ class PostController extends Controller
         ]);
         $validated['user_id'] = auth()->id();
         $post = Post::create($validated);
-        $request->session()->flash('message', '保存しました');
+        $request->session()->flash('message', '保存しました👍');
         return redirect()->route('post.index');
     }
 
@@ -67,7 +67,7 @@ class PostController extends Controller
         ]);
         $validated['user_id'] = auth()->id();
         $post->update($validated);
-        $request->session()->flash('message', '更新しました＄');
+        $request->session()->flash('message', '更新しました');
         return redirect()->route('post.show', compact('post'));
     }
 
@@ -77,7 +77,7 @@ class PostController extends Controller
     public function destroy(Request $request, Post $post)
     {
         $post->delete();
-        $request->session()->flash('message', '削除しました＄');
+        $request->session()->flash('message', '削除しました🗑️');
         return redirect()->route('post.index');
     }
 }
