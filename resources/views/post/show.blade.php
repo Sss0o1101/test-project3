@@ -20,7 +20,7 @@
                     <form method="post" action="{{route('post.destroy', $post)}}" class="flex-2">
                     @csrf
                     @method('delete')
-                        <x-primary-button class="bg-red-700 ml-2" style="background-color: #37bae6;">
+                        <x-primary-button class="bg-red-700 ml-2" style="background-color: #e9d138;">
                             削除
                         </x-primary-button>
                     </form>
