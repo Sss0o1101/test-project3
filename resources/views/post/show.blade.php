@@ -5,7 +5,7 @@
     </h2>
     </x-slot>
     <div class="max-w-7xl mx-auto px-6">
-        <div class="bg-white w-full rounded-2xl">
+        <div class="bg-white w-full rounded-2xl" style="border-radius: 15px;">
             <div class="mt-4 p-4">
                 <h1 class="text-lg font-semibold" >
                     {{ $post->title }}
