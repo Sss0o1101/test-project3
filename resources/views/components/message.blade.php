@@ -5,6 +5,6 @@
 @endif
 <style>
     .bg-green-100 {
-        background-color: #d1fae5; /* 緑の背景色を指定 */
+        background-color: rgb(139, 196, 249);
     }
 </style>
