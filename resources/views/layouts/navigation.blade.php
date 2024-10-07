@@ -1,6 +1,6 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="background-color:rgb(216, 54, 54);">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
@@ -14,10 +14,10 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                     <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
+                     <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')" style="color: black;">
                         投稿一覧
                     </x-nav-link>
-                    <x-nav-link :href="route('post.create')" :active="request()->routeIs('post.create')">
+                    <x-nav-link :href="route('post.create')" :active="request()->routeIs('post.create')" style="color: black;">
                         新規作成
                     </x-nav-link>
                 </div>
